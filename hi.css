@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Permanent+Marker&family=Sigmar+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Chelsea Market', cursive;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+.center {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0c1622;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.center .logo {
+  width: 15rem;
+  height: 15rem;
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  border-radius: 3rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.center .logo .sqre {
+  width: 11rem;
+  height: 11rem;
+  border: 1rem solid #fff;
+  background-color: transparent;
+  border-radius: 3rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+  animation: lght 1s reverse infinite;
+}
+
+.center .logo .sqre::before {
+  content: "";
+  width: 3.8rem;
+  height: 3.8rem;
+  background-color: transparent;
+  border: 1rem solid #fff;
+  border-radius: 3rem;
+  position: absolute;
+}
+
+.center .logo .sqre::after {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+  border: .15rem solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: .6rem;
+  right: .8rem;
+}
+
+@-webkit-keyframes lght {
+  0% {
+    background: turquoise;
+  }
+  50% {
+    background: #d4c822;
+  }
+  70% {
+    background: #6340e0;
+  }
+  100% {
+    background: #DF3770;
+  }
+}
+
+@keyframes lght {
+  0% {
+    background: turquoise;
+  }
+  50% {
+    background: #d4c822;
+  }
+  70% {
+    background: #6340e0;
+  }
+  100% {
+    background: #DF3770;
+  }
+}
+/*# sourceMappingURL=hi.css.map */
